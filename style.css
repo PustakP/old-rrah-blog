@@ -1,0 +1,23 @@
+body {
+  background-color:  #121212;
+}
+
+h2 {
+  color: rgba(223, 120, 223, 0.856);
+  text-align: center;
+  font-family: 'Yellowtail', cursive;
+}
+h4 {
+  color: rgba(252, 194, 237, 0.856);
+  font-family: 'Press Start 2P';
+}
+* {
+  text-align: center;
+  
+  
+}
+
+img.two {
+  height: 50%;
+  width: 50%;
+}

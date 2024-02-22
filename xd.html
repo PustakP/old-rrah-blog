@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html><head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<!-- Favicon and title -->
+<link rel="shortcut icon" href="https://mebious.neocities.org/favico/attention.png"><title>PRESENT DAY, PRESENT TIME.</title>
+<!-- End of Favicon and title -->
+<!-- Start of Page Styling -->
+<style>
+@font-face {
+    font-family: 'LoveLetter'; /*a name to be used later*/
+    src: local('LoveLetter'),  /*URL to font*/
+        url('https://mebious.neocities.org/fonts/LoveLetterWeb.ttf#font') format('truetype');
+}    
+*{
+  font-family:monospace;
+  margin:0; 
+  padding:0; 
+  overflow:hidden;
+}
+body{
+    background-color: black;
+    cursor:wait;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#hide_all{
+    background: rgb(246,240,163);
+    position: fixed;
+    left: 0; right: 0;top: 0;
+    height: 37px;
+    z-index:1;
+    }
+#hide_all:hover{ cursor: auto; }
+
+@-webkit-keyframes pulse {
+    0%  { opacity:0.20; }
+    10% { opacity:0.30; }
+    20% { opacity:0.40; }
+    30% { opacity:0.50; }
+    40% { opacity:0.60; }
+    50% { opacity:0.70; }
+    60% { opacity:0.80; }
+    70% { opacity:0.90; }
+    80% { opacity:1.00; }
+    90% { opacity:1.00; }
+    100%{ opacity:1.00; } 
+}
+#bg.back{
+    background-image:url('/letgo.png');
+    background-repeat:no-repeat;
+    background-position:60% -10%;
+    -webkit-animation-name: 'pulse';
+    -webkit-transition: background 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate; 
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 2s;
+}
+</style>
+<!-- End of Page Styling -->    
+<!-- Start of scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/js/randtext.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#show_image').on("click", function(){ $('#hide_all').hide('fast'); });
+});
+</script>
+<script type="text/javascript">
+var ageGet = function(){
+    alert("Attempting to access the archives without a preventative measures may result in rejection and permanent brain damage.");
+    
+    var age = prompt("You should be atleast 18 years of age to proceeed. Please enter your age to continue.");
+
+    if ( age <= 17 )
+    {
+    alert("ACCESS DENIED");  
+    window.location.href = '/safety.html';    
+    }
+    else if (isNaN(age)){
+    alert("Input is not a number.");
+    ageGet();
+    return;
+    }
+};
+</script>
+<!-- End of scripts -->
+</head>
+<body Onload="ageGet()">
+
+<!-- bg audio -->
+  <iframe width="0" height="0" src="https://www.youtube.com/embed/vfBmYfnjLho?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- END OF bg audio -->
+    
+<a href="/ninja.html">
+<div style="background-color:black;border-style:solid;border-width:5px;color:red;text-decoration:none;text-align:center;position:fixed;
+bottom:0px;right:0px;padding:5px;z-index:99;cursor:url('https://mebious.neocities.org/cur/Lain_Link.png'), pointer;
+"><h1>PROCEED</h1></div></a>
+      
+<!-- Start of fake plug-in check -->
+<div id="hide_all">
+<a href="/growth.html">
+<img alt="plugin check" draggable="false" src="https://mebious.neocities.org/img/lol1.png" style="position:fixed; top:0px; left:0px; z-index:998;"></a>
+<img id="show_image" alt="plugin check" draggable="false" src="https://mebious.neocities.org/img/lol2.png" style="position:fixed;top:0px;right:0px;z-index:999;">
+</div>
+<!-- End of fake plug-in check -->
+
+<!-- Background start -->
+<div id="bg" class="back" style="position:fixed;width:100%;height:100%;z-index:-5;margin:auto;"></div>
+<!-- Background end -->
+
+<div id="container" style="position:fixed;width:100%;height:100%;z-index:-1;">
+
+</div>
+
+
+</body>
+</html>
